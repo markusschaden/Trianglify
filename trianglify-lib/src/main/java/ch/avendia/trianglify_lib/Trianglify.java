@@ -46,12 +46,6 @@ public class Trianglify {
         } else {
             random = new Random(settings.getSeed());
         }
-/*        var x_color = chroma.scale(opts.x_colors).mode(opts.color_space);
-        var y_color = chroma.scale(opts.y_colors).mode(opts.color_space);
-        gradient = function(x, y) {
-            return chroma.interpolate(x_color(x), y_color(y), 0.5, opts.color_space);
-        };
-*/
 
         // How many cells we're going to have on each axis (pad by 2 cells on each edge)
         double cellsX = Math.floor((width + 4 * settings.getCellSize()) / settings.getCellSize());
